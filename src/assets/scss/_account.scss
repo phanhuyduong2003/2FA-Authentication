@@ -1,0 +1,15 @@
+@use "mixin";
+.wrapper.account {
+  .content {
+    @include mixin.flex(center, normal);
+    padding-block: 10px;
+    .account-card {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      .account-card-header {
+        color: #fff;
+      }
+    }
+  }
+}

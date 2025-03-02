@@ -1,0 +1,43 @@
+@mixin mq_min_576 {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin mq_min_768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mq_min_992 {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin mq_min_1280 {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin mq_min_1400 {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin set_font($size: 16px, $weight, $height: 1) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+@mixin truncate_text($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

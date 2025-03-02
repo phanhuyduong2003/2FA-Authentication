@@ -1,0 +1,24 @@
+@use "mixin";
+.wrapper.login {
+  .login-wrapper {
+    @include mixin.flex(center, normal);
+    .login-welcome {
+      width: 50%;
+      min-height: 100vh;
+      @include mixin.flex(center, center);
+      flex-direction: column;
+      padding: 20px;
+      @include mixin.set_font(20px, normal, 1.5);
+      background-color: #1977ff;
+      color: #fff;
+    }
+    .login-form {
+      width: 50%;
+      @include mixin.flex(center, center);
+      padding: 20px;
+      .ant-form {
+        width: 100%;
+      }
+    }
+  }
+}
