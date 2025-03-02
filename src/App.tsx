@@ -10,7 +10,7 @@ import { paths } from "@/config";
 import { useAuth } from "@/hooks/useAuth";
 
 function App() {
-  const user = useAuth();
+  const { user } = useAuth();
 
   const publicRoute = publicRoutes?.map((route: RouteType) => {
     const Page = route.component;
