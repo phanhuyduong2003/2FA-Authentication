@@ -32,6 +32,11 @@ export const Login = () => {
           const userData = userDoc.data();
           if (userData?.secret) {
             setVisible(true);
+          } else {
+            messageApi.success("Login successfully");
+            setTimeout(() => {
+              navigate(paths.home);
+            }, 1000);
           }
         }
       }
